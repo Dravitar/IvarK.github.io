@@ -81,6 +81,29 @@ function drawAnimations(ts){
     if (player.options.animations.tachyonParticles) requestAnimationFrame(drawAnimations);
 }
 
+function drawHeresyBranch(num1, num2) {
+    if (document.getElementById("heresystudies").style.display === "none") return
+    var name1 = parseInt(num1);
+    var name2 = parseInt(num2);
+    var start = document.getElementById(num1).getBoundingClientRect();
+    var end = document.getElementById(num2).getBoundingClientRect();
+    var x1 = start.left + (start.width / 2) + (document.documentElement.scrollLeft || document.body.scrollLeft);
+    var y1 = start.top + (start.height / 2) + (document.documentElement.scrollTop || document.body.scrollTop);
+    var x2 = end.left + (end.width / 2) + (document.documentElement.scrollLeft || document.body.scrollLeft);
+    var y2 = end.top + (end.height / 2) + (document.documentElement.scrollTop || document.body.scrollTop);
+    ctx.lineWidth=15;
+    ctx.beginPath();
+    if (player.heresystudy.studies.includes(name1) && player.heresystudy.studies.includes(name2)) {
+        ctx.strokeStyle="#b20000";
+    }
+    else {
+        ctx.strokeStyle="#5b0000";
+    }
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+}
+
 function drawTreeBranch(num1, num2) {
     if (document.getElementById("timestudies").style.display === "none") return
     var name1 = parseInt(num1);
@@ -242,6 +265,9 @@ function drawStudyTree() {
     drawTreeBranch("dilstudy3", "dilstudy4")
     drawTreeBranch("dilstudy4", "dilstudy5")
     drawTreeBranch("dilstudy5", "dilstudy6")
+    // ##############################################################
+    // drawHeresyBranch("", "") //ADD HERESY STUDIES ################
+    // ##############################################################
     if (shiftDown && document.getElementById("eternitystore").style.display !== "none" && document.getElementById("timestudies").style.display !== "none") {
         for (i=0; i<all.length; i++) {
             var start = document.getElementById(all[i]).getBoundingClientRect();
