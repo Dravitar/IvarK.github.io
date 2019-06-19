@@ -7,6 +7,7 @@ const allAchievements = {
   r16 : "We couldn't afford 9",
   r17 : "Not a luck related achievement",
   r18 : "90 degrees to infinity",
+  r19 : "HERETIC ACHIEVE 1", //ADD THIS ######################
   r21 : "To infinity!",
   r22 : "Fake News",
   r23 : "The 9th Dimension is a lie",
@@ -15,6 +16,7 @@ const allAchievements = {
   r26 : "You got past The Big Wall",
   r27 : "Double Galaxy",
   r28 : "There's no point in doing that",
+  r29 : "HERETIC ACHIEVE 2", //ADD THIS ######################
   r31 : "I forgot to nerf that",
   r32 : "The Gods are pleased",
   r33 : "That's a lot of infinites",
@@ -23,6 +25,7 @@ const allAchievements = {
   r36 : "Claustrophobic",
   r37 : "That's fast!",
   r38 : "I don't believe in Gods",
+  r39 : "HERETIC ACHIEVE 3", //ADD THIS ######################
   r41 : "Spreading Cancer",
   r42 : "Supersanic",
   r43 : "Zero Deaths",
@@ -31,6 +34,7 @@ const allAchievements = {
   r46 : "Multidimensional",
   r47 : "Daredevil",
   r48 : "AntiChallenged",
+  r49 : "HERETIC ACHIEVE 4", //ADD THIS ######################
   r51 : "Limit Break",
   r52 : "Age of Automation",
   r53 : "Definitely not worth it",
@@ -39,6 +43,7 @@ const allAchievements = {
   r56 : "Many Deaths",
   r57 : "Gift from the Gods",
   r58 : "Is this hell?",
+  r59 : "HERETIC ACHIEVE 5", //ADD THIS ######################
   r61 : "Bulked up",
   r62 : "Oh hey, you're still here",
   r63 : "A new beginning.",
@@ -47,6 +52,7 @@ const allAchievements = {
   r66 : "Faster than a squared potato",
   r67 : "Infinitely Challenging",
   r68 : "You did this again just for the achievement right?",
+  r69 : "HERETIC ACHIEVE 6", //ADD THIS ######################
   r71 : "ERROR 909: Dimension not found",
   r72 : "Can't hold all these infinities",
   r73 : "This achievement doesn't exist",
@@ -55,6 +61,7 @@ const allAchievements = {
   r76 : "One for each dimension",
   r77 : "How the antitables have turned",
   r78 : "Blink of an eye",
+  r79 : "HERETIC ACHIEVE 7", //ADD THIS ######################
   r81 : "Hevipelle did nothing wrong",
   r82 : "Anti-antichallenged",
   r83 : "YOU CAN GET 50 GALAXIES!??",
@@ -63,6 +70,7 @@ const allAchievements = {
   r86 : "Do you even bend time bro?",
   r87 : "2 Million Infinities",
   r88 : "Yet another infinity reference",
+  r89 : "HERETIC ACHIEVE 8", //ADD THIS ######################
   r91 : "Ludicrous Speed",
   r92 : "I brake for nobody",
   r93 : "MAXIMUM OVERDRIVE",
@@ -71,6 +79,7 @@ const allAchievements = {
   r96 : "Time is relative",
   r97 : "Yes. This is hell.",
   r98 : "0 degrees from infinity",
+  r99 : "HERETIC ACHIEVE 9", //ADD THIS ######################
   r101 : "Costco sells dimboosts now",
   r102 : "This mile took an Eternity",
   r103 : "This achievement doesn't exist II",
@@ -79,6 +88,7 @@ const allAchievements = {
   r106 : "The swarm",
   r107 : "Do you really need a guide for this?",
   r108 : "We could afford 9",
+  r109 : "HERETIC ACHIEVE 10", //ADD THIS ####################
   r111 : "Yo dawg, I heard you liked infinities...",
   r112 : "Never again",
   r113 : "Long lasting relationship",
@@ -87,6 +97,7 @@ const allAchievements = {
   r116 : "Do I really need to infinity",
   r117 : "8 nobody got time for that",
   r118 : "IT'S OVER 9000",
+  r119 : "HERETIC ACHIEVE 11", //ADD THIS ####################
   r121 : "Can you get infinite IP?",
   r122 : "You're already dead.",
   r123 : "5 more eternities until the update",
@@ -95,6 +106,7 @@ const allAchievements = {
   r126 : "Popular music",
   r127 : "But I wanted another prestige layer...",
   r128 : "What do I have to do to get rid of you",
+  r129 : "HERETIC ACHIEVE 12", //ADD THIS ####################
   r131 : "No ethical consumption",
   r132 : "Unique snowflakes",
   r133 : "I never liked this infinity stuff anyway",
@@ -103,6 +115,7 @@ const allAchievements = {
   r136 : "I told you already, time is relative",
   r137 : "Now you're thinking with dilation!",
   r138 : "This is what I have to do to get rid of you.",
+  r139 : "HERETIC ACHIEVE 13", //ADD THIS ####################
   s11 : "The first one's always free",
   s12 : "Just in case",
   s13 : "It pays to have respect",
