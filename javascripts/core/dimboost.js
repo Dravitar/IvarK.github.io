@@ -29,6 +29,7 @@ function softReset(bulk) {
       sixthCost: new Decimal(1e13),
       seventhCost: new Decimal(1e18),
       eightCost: new Decimal(1e24),
+      ninthCost: new Decimal(1), // HERESY ADDITION
       firstAmount: new Decimal(0),
       secondAmount: new Decimal(0),
       thirdAmount: new Decimal(0),
@@ -41,10 +42,12 @@ function softReset(bulk) {
       sixthAmount: new Decimal(0),
       seventhAmount: new Decimal(0),
       eightAmount: new Decimal(0),
+      ninthAmount: new Decimal(0), // HERESY ADDITION
       fifthBought: 0,
       sixthBought: 0,
       seventhBought: 0,
       eightBought: 0,
+      ninthBought: 0, // HERESY ADDITION
       sacrificed: new Decimal(0),
       achievements: player.achievements,
       challenges: player.challenges,
@@ -64,6 +67,7 @@ function softReset(bulk) {
       sixthPow: getDimensionBoostPower().pow(player.resets- 5).max(1),
       seventhPow: getDimensionBoostPower().pow(player.resets- 6).max(1),
       eightPow: getDimensionBoostPower().pow(player.resets- 7).max(1),
+      ninthPow: getDimensionBoostPower().pow(player.resets- 8).max(1), // HERESY ADDITION
       resets: player.resets,
       galaxies: player.galaxies,
       tickDecrease: player.tickDecrease,
@@ -73,7 +77,9 @@ function softReset(bulk) {
       achPow: player.achPow,
     newsArray: player.newsArray,
       autobuyers: player.autobuyers,
-      costMultipliers: [new Decimal(1e3), new Decimal(1e4), new Decimal(1e5), new Decimal(1e6), new Decimal(1e8), new Decimal(1e10), new Decimal(1e12), new Decimal(1e15)],
+      // HERESY ADDITION BELOW                                                                                                                                              RIGHT HERE
+      costMultipliers: [new Decimal(1e3), new Decimal(1e4), new Decimal(1e5), new Decimal(1e6), new Decimal(1e8), new Decimal(1e10), new Decimal(1e12), new Decimal(1e15), new Decimal(1e6)],
+      // HERESY ADDITION ABOVE
       tickspeedMultiplier: new Decimal(10),
       chall2Pow: player.chall2Pow,
       chall3Pow: new Decimal(0.01),
@@ -108,6 +114,7 @@ function softReset(bulk) {
       infinityDimension6: player.infinityDimension6,
       infinityDimension7: player.infinityDimension7,
       infinityDimension8: player.infinityDimension8,
+      infinityDimension9: player.infinityDimension9, //HERESY ADDITION
       infDimBuyers: player.infDimBuyers,
       timeShards: player.timeShards,
       tickThreshold: player.tickThreshold,
@@ -119,6 +126,7 @@ function softReset(bulk) {
       timeDimension6: player.timeDimension6,
       timeDimension7: player.timeDimension7,
       timeDimension8: player.timeDimension8,
+      timeDimension9: player.timeDimension9, // HERESY ADDITION
       eternityPoints: player.eternityPoints,
       eternities: player.eternities,
       thisEternity: player.thisEternity,
@@ -126,6 +134,22 @@ function softReset(bulk) {
       eternityUpgrades: player.eternityUpgrades,
       epmult: player.epmult,
       epmultCost: player.epmultCost,
+      heresyPoints: player.heresyPoints, // HERESY ADDITION
+      heresyDimension1: player.heresyDimension1, // HERESY ADDITION
+      heresyDimension2: player.heresyDimension2, // HERESY ADDITION
+      heresyDimension3: player.heresyDimension3, // HERESY ADDITION
+      heresyDimension4: player.heresyDimension4, // HERESY ADDITION
+      heresyDimension5: player.heresyDimension5, // HERESY ADDITION
+      heresyDimension6: player.heresyDimension6, // HERESY ADDITION
+      heresyDimension7: player.heresyDimension7, // HERESY ADDITION
+      heresyDimension8: player.heresyDimension8, // HERESY ADDITION
+      heresyDimension9: player.heresyDimension9, // HERESY ADDITION
+      heresies: player.heresies, // HERESY ADDITION
+      thisHeresy: player.thisHeresy, // HERESY ADDITION
+      bestHeresy: player.bestHeresy, // HERESY ADDITION
+      heresyUpgrades: player.heresyUpgrades, // HERESY ADDITION
+      hpmult: player.hpmult, // HERESY ADDITION
+      hpmultCost: player.hpmultCost, // HERESY ADDITION
       totalTickGained: player.totalTickGained,
       offlineProd: player.offlineProd,
       offlineProdCost: player.offlineProdCost,
@@ -133,10 +157,15 @@ function softReset(bulk) {
       autoSacrifice: player.autoSacrifice,
       replicanti: player.replicanti,
       timestudy: player.timestudy,
+      heresystudy: player.heresystudy,
       eternityChalls: player.eternityChalls,
       eternityChallGoal: player.eternityChallGoal,
       currentEternityChall: player.currentEternityChall,
       eternityChallUnlocked: player.eternityChallUnlocked,
+      heresyChalls: player.heresyChalls,
+      heresyChallsGoal: player.heresyChallsGoal,
+      currentHeresyChall: player.currentHeresyChall,
+      heresyChallUnlocked: player.heresyChallUnlocked,
       etercreq: player.etercreq,
       autoIP: player.autoIP,
       autoTime: player.autoTime,
@@ -160,7 +189,9 @@ function softReset(bulk) {
       player.seventhCost = new Decimal(2e5)
       player.eightCost = new Decimal(4e6)
   }
-  if (player.currentChallenge == "postc1") player.costMultipliers = [new Decimal(1e3),new Decimal(5e3),new Decimal(1e4),new Decimal(1.2e4),new Decimal(1.8e4),new Decimal(2.6e4),new Decimal(3.2e4),new Decimal(4.2e4)];
+  // HERESY ADDITION BELOW                                                                                                                                                                                                RIGHT HERE
+  if (player.currentChallenge == "postc1") player.costMultipliers = [new Decimal(1e3),new Decimal(5e3),new Decimal(1e4),new Decimal(1.2e4),new Decimal(1.8e4),new Decimal(2.6e4),new Decimal(3.2e4),new Decimal(4.2e4),new Decimal(1e6)];
+  // HERESY ADDITION ABOVE
   if (player.resets == 1 && player.currentChallenge == "") {
       if (player.infinityUpgrades.includes("skipReset2")) player.resets++;
       if (player.infinityUpgrades.includes("skipReset3")) player.resets++;
